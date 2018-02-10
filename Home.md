@@ -1,1 +1,3 @@
 Welcome to the BagelBot wiki!
+
+You may want to [get started](https://github.com/hugeblank/BagelBot/wiki/Getting-Started)...
