@@ -1,14 +1,29 @@
-## What's BagelBot?
-Welcome, I suppose you're probably here because you have no idea what you're doing so I guess the best way to start would be to explain what BagelBot is. BagelBot is a Lua plugin loader/API for ComputerCraft. Those are some big words, so let me break it down for you. A plugin loader, particularly for Minecraft adds commands to the game to make playing a lot more fun. Plugins could be compared to mods, and BagelBot could be compared to Forge, the loader of these mods. However this isn't a perfect example because plugins actually do exist outside of Forge. Plugins primarily are added to servers to allow the servers to manipulate how the game works. Unlike mods however, plugins only manipulate things on the server and so the player can have a vanilla client, and join a plugin loaded server. With that said, BagelBot could now be copared to Sponge, a well known plugin loader for Minecraft. 
+Let's get you into the realm of Allium!
 
-## Why should I use it?
-Now comes the question, why does BagelBot even exist? You have to install Computercraft and other mods in order to join a server with BagelBot on it, so what's the point? My answer to that is simply, java is excessive. It's a very advanced language with many concepts that are hard to grasp. To make a plugin you need to not only understand Java, but also the API library that the plugin loader provides, which could be huge. This could be very ominous for someone that just wants to develop a plugin that does a simple task like teleport a player around. Enter BagelBot. BagelBot uses ComputerCraft's native Lua 5.2, which is significantly easier to learn than Java. Along with that, the API for BagelBot is very simple and easy to understand.
-
-## How to Install
-You probably want to have BagelBot before anything else, so let's start with that. 
-To install BagelBot, paste this into the command line, it's that simple!
+## Installation
+To install Allium, run this command in a **Command Computer** with a **Plethora Creative Chat Module**. It's that simple!
 
 `pastebin run LGwrkjxm`
 
-The installer installs [Eric Wieser's](https://github.com/eric-wieser/) [computercraft-github](https://github.com/eric-wieser/computercraft-github), a github repository downloader that is necessary to download the bot, and the plugins that can be installed.
+The installer installs:
 
+- The Allium Repo - allium.lua, plugins/allium-stem.lua, colors.lua, readme.md
+
+- The Raisin Repo - raisin/raisin.lua, raisin/readme.md
+
+- Apemanzilla's [gitget](http://www.computercraft.info/forums2/index.php?/topic/17387-gitget-version-2-release/), a github repository downloader that is necessary to download Allium, and the plugins that can be installed. 
+
+- repolist.csh - A _Craftos SHell_ file, where you can gitget various plugins and utilities and keep them up to date.
+
+- startup.lua - startup file that runs the repolist file, then runs Allium. When Allium crashes/exits it will reboot after 3 seconds unless interrupted.
+
+- persistence.ltn - A _Lua Table Notation_ file containing all serialized persistence entries for each plugin.
+
+## Developing
+
+Developers for Allium may want to take a look at the documentation provided in this wiki, in no particular order:
+- [Formatting Codes](https://github.com/hugeblank/Allium/wiki/Formatting-Codes)
+- [Allium API Documentation](https://github.com/hugeblank/Allium/wiki/Allium-API-Documentation)
+- [Register API Documentation](https://github.com/hugeblank/Allium/wiki/Register-API-Documentation)
+- [Command Parameter Documentation](https://github.com/hugeblank/Allium/wiki/Command-Parameter-Documentation)
+As a developer you may also want to take a look at some of the things that are getting added to Allium before thay're released. If you're interested in that, try cloning the [unstable branch](https://github.com/hugeblank/Allium/tree/unstable-as). Documentation on unstable functions can be found [here](https://github.com/hugeblank/Allium/wiki/Unstable-Documentation)

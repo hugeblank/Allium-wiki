@@ -1,10 +1,12 @@
-BagelBot comes with a few default commands that you might want to be made aware of.
+Allium comes with a few default commands that you might want to be made aware of. I call these commands Allium's Stem. All of the code for these commands can be found in the `plugins/allium-stem.lua` file. 
 ***
-### !help
-Provides a friendly help menu that gives information about every command that you have installed.
+### !allium:help
+Provides a friendly help menu that gives information about every plugin and command that you have installed.
 ***
-### !github
-Provides a link to the BagelBot repository.
+### !allium:credits
+Provides a link to the Allium repository.
 ***
-### !plugins
+### !allium:plugins
 Provides a list of all plugins that you have installed, based on their directory name.
+***
+Read Next: [Formatting Codes](https://github.com/hugeblank/Allium/wiki/Formatting-Codes)
