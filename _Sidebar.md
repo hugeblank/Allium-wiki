@@ -1,0 +1,8 @@
+- [Home](https://github.com/hugeblank/Allium/wiki)
+- [Getting Started](https://github.com/hugeblank/Allium/wiki/Getting-Started)
+- [Stem Commands](https://github.com/hugeblank/Allium/wiki/Commands)
+- Documentation
+  - [Formatting](https://github.com/hugeblank/Allium/wiki/Formatting-Codes)
+  - [Allium API](https://github.com/hugeblank/Allium/wiki/Alllium-API)
+  - [Register API](https://github.com/hugeblank/Allium/wiki/Register-API)
+  - [Command Parameters](https://github.com/hugeblank/Allium/wiki/Command-Parameters)
