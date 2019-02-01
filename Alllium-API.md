@@ -70,7 +70,7 @@ Register an Allium plugin
   - _string_: plugin name, converted to allium plugin ID
   - _[string]_: optional manually set human readable plugin name
 - **Returns**
-  - _table_: list of functions, see [Register API](https://github.com/hugeblank/Allium/wiki/Register-API-Documentation)
+  - _table_: list of functions, see [Register API](https://github.com/hugeblank/Allium/wiki/Register-API)
 ---
 ## Events: 
 #### player_join
@@ -87,4 +87,4 @@ Fired when a player leaves
 _string_ `side`: The location of the chat recorder that allium is using
 
 ---
-Read Next: [Register API Documentation](https://github.com/hugeblank/Allium/wiki/Register-API-Documentation)
+Read Next: [Register API Documentation](https://github.com/hugeblank/Allium/wiki/Register-API)

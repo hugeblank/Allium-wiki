@@ -23,7 +23,7 @@ The installer installs:
 
 Developers for Allium may want to take a look at the documentation provided in this wiki, in no particular order:
 - [Formatting Codes](https://github.com/hugeblank/Allium/wiki/Formatting-Codes)
-- [Allium API Documentation](https://github.com/hugeblank/Allium/wiki/Allium-API-Documentation)
-- [Register API Documentation](https://github.com/hugeblank/Allium/wiki/Register-API-Documentation)
-- [Command Parameter Documentation](https://github.com/hugeblank/Allium/wiki/Command-Parameter-Documentation)
-As a developer you may also want to take a look at some of the things that are getting added to Allium before thay're released. If you're interested in that, try cloning the [unstable branch](https://github.com/hugeblank/Allium/tree/unstable-as). Documentation on unstable functions can be found [here](https://github.com/hugeblank/Allium/wiki/Unstable-Documentation)
+- [Allium API Documentation](https://github.com/hugeblank/Allium/wiki/Allium-API)
+- [Register API Documentation](https://github.com/hugeblank/Allium/wiki/Register-API)
+- [Command Parameter Documentation](https://github.com/hugeblank/Allium/wiki/Command-Parameter)
+As a developer you may also want to take a look at some of the things that are getting added to Allium before thay're released. If you're interested in that, try cloning the [unstable branch](https://github.com/hugeblank/Allium/tree/unstable-as). Documentation on unstable functions can be found [here](https://github.com/hugeblank/Allium/wiki/Unstable)
