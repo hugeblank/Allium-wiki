@@ -1,7 +1,7 @@
 The following API is loaded on execution of Allium, and placed into the global environment. All functions located here are called by prefixing `allium.` to the function name.
 
 ## Functions:
-##### `assert`
+#### `assert`
 Lua's generic assert, with the ability to set the error level
 - **Parameters**
   - _boolean_: condition to test
@@ -10,14 +10,14 @@ Lua's generic assert, with the ability to set the error level
 - **Returns**
   - _none_
 
-##### `sanitize`
+#### `sanitize`
 Sanitize plugin names to meet Plugin ID standards
 - **Parameters**
   - _string_: plugin/command name string
 - **Returns**
   - _string_: valid allium plugin/command ID
 
-##### `tell`
+#### `tell`
 Output [formatted](https://github.com/hugeblank/Allium/wiki/Formatting-Codes) text
 - **Parameters**
   - _string_: name of user
@@ -26,21 +26,21 @@ Output [formatted](https://github.com/hugeblank/Allium/wiki/Formatting-Codes) te
 - **Returns**
   - _string_: execution results
 
-##### `getPlayers`
+#### `getPlayers`
 Lists all online players
 - **Parameters**
   - _none_
 - **Returns**
   - _table_: list of online players
 
-##### `getInfo`
+#### `getInfo`
 Get information data for one or all plugins
 - **Parameters**
   - _[string]_: allium plugin ID
 - **Returns**
   - _table_: table of information organized as `table[plugin][command] = information`
 
-##### `getName`
+#### `getName`
 Get the human readable name from the plugin ID
 - **Parameters**
   - _string_: allium plugin ID
@@ -64,7 +64,7 @@ Perform an operation on each player
   - _boolean_: operation result
   - _string_: error if the operation failed
 
-##### `register`
+#### `register`
 Register an Allium plugin
 - **Parameters**
   - _string_: plugin name, converted to allium plugin ID
