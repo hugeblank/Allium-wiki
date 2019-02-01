@@ -3,7 +3,7 @@
 - [Stem Commands](https://github.com/hugeblank/Allium/wiki/Commands)
 - Documentation
   - [Formatting](https://github.com/hugeblank/Allium/wiki/Formatting-Codes)
-  - [Allium API](https://github.com/hugeblank/Allium/wiki/Alllium-API)
+  - [Allium API](https://github.com/hugeblank/Allium/wiki/Allium-API)
   - [Register API](https://github.com/hugeblank/Allium/wiki/Register-API)
   - [Command Parameters](https://github.com/hugeblank/Allium/wiki/Command-Parameters)
   - [Unstable Functions](https://github.com/hugeblank/Allium/wiki/Unstable)
