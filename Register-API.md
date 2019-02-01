@@ -1,7 +1,8 @@
 The following API is returned from [`allium.register`](https://github.com/hugeblank/Allium/wiki/Allium-API-Documentation), in a table. 
 
 ## Functions:
-#### `command`: Register a command within this plugin
+#### `command`
+Register a command within this plugin
 - **Parameters**
   - _string_: command name
   - _function_: function to execute
@@ -10,20 +11,23 @@ The following API is returned from [`allium.register`](https://github.com/hugebl
 - **Returns**
   - _none_
 
-#### `thread`: Register a thread within this plugin
+#### `thread`
+Register a thread within this plugin
 - **Parameters**
   - _function_: function to turn into a thread
 - **Returns**
-  - _number_: Raisin thread ID (see Raisin's thread API [documentation](https://github.com/hugeblank/raisin/wiki))
+  - _table_: wrapped Raisin thread (see Raisin's thread API [documentation](https://github.com/hugeblank/raisin/wiki))
 
-#### `setPersistence`: Sets data that will remain persistent across a reboot of Allium.
+#### `setPersistence`
+Sets data that will remain persistent across a reboot of Allium.
 - **Parameters**
   - _string_: name of the persistent value
   - _any_: data to assign to value
 - **Returns**
   - _none_
 
-#### `getPersistence`: Sets data that will remain persistent across a reboot of Allium.
+#### `getPersistence`
+Sets data that will remain persistent across a reboot of Allium.
 - **Parameters**
   - _string_: name of the persistent value
 - **Returns**
