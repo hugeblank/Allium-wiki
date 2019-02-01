@@ -1,4 +1,4 @@
-Welcome, traveller, to the Allium wiki!
+Welcome, traveller, to the Allium wiki! If you don't like useless banter, you probably just want to [get started](https://github.com/hugeblank/Allium/wiki/Getting-Started).
 
 ## What is Allium?
 I suppose you're probably here because you have no idea what you're doing so the best way to start would be to explain _what_ exactly Allium is. Allium is a Lua plugin loader for ComputerCraft. Generally, plugins can be considered as server-side mods. This means that you only need the plugins to exist within the server, the client doesn't need to modify their game to join the server. Allium allows for plugins to be loaded in Lua, with the provided API.
