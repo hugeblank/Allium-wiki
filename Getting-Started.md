@@ -1,4 +1,4 @@
-Let's get you into the realm of Allium!
+Let's get you into the realm of Allium! This is a 10 minute read if you decide to read the entire thing, which is very highly recommended. Just because it's titled "installation" doesn't mean it doesn't have anything useful for developers, and jsut because it's titled "developing" doesn't mean it doesn't contain information of use for people who want to install. However that may just be me being a cynic mixed with pride for my own work. Just continue reading...
 
 ## Installation
 To install Allium, run this command in a **Command Computer** with a **Plethora Creative Chat Module**. It's that simple!
@@ -15,15 +15,52 @@ The installer installs:
 
 - repolist.csh - A _Craftos SHell_ file, where you can gitget various plugins and utilities and keep them up to date.
 
-- startup.lua - startup file that runs the repolist file, then runs Allium. When Allium crashes/exits it will reboot after 3 seconds unless interrupted.
+- startup.lua - startup file that runs the repolist file, then runs Allium. When Allium crashes/exits it will reboot after 5 seconds unless interrupted.
 
 - persistence.ltn - A _Lua Table Notation_ file containing all serialized persistence entries for each plugin.
 
-## Developing
+## Installing Plugins
+Installing plugins is just as simple as Installing Allium! All you need to do is add some information into the `repolist.csh` file.
 
-Developers for Allium may want to take a look at the documentation provided in this wiki, in no particular order:
-- [Formatting Codes](https://github.com/hugeblank/Allium/wiki/Formatting-Codes)
-- [Allium API Documentation](https://github.com/hugeblank/Allium/wiki/Allium-API)
-- [Register API Documentation](https://github.com/hugeblank/Allium/wiki/Register-API)
-- [Command Parameter Documentation](https://github.com/hugeblank/Allium/wiki/Command-Parameter)
-As a developer you may also want to take a look at some of the things that are getting added to Allium before thay're released. If you're interested in that, try cloning the [unstable branch](https://github.com/hugeblank/Allium/tree/unstable-as). Documentation on unstable functions can be found [here](https://github.com/hugeblank/Allium/wiki/Unstable)
+The `repolist.csh` file is simply a list of CraftOS commands that are to be executed one after the other. To install a plugin from github for example, since `gitget` is installed by Allium, one could do something like:
+
+```gitget username plugin_repo commit_hash /plugins/plugin_name```
+
+Where:
+- `username` is the github username of the developer
+- `plugin_repo` is the repository on that user's profile where the plugin is located
+- `commit_hash` is a safe commit hash to clone from
+- `/plugins/plugin_name` is the location where you want to install the plugin
+
+Gitget is not the only method of obtaining plugins, but it is one of the safest. You could also use `pastebin` or `wget` if you so fancy:
+
+```pastebin get paste_code /plugins/plugin_name```
+
+Where:
+- `paste_code` is the 10 or so digit base-64 pastebin code found at the end of the URL
+- `/plugins/plugin_name` is the location you want to install the plugin
+
+```wget url /plugins/plugin_name```
+
+Where:
+- `url` is the URL of the plugin
+- `/plugins/plugin_name` is the location you want to install the plugin
+
+__NOTE 1__ Plugins will only be loaded if they are within the `/plugins` directory. If the plugin is a single file then it is not necessary to install into a seperate directory, but for consistency it's a good idea. Certain plugins may depend on multiple files to execute, it's in this case where a directory is almost always necessary.
+
+__NOTE 2__ There are _MANY_ more ways to install plugins, some could theoretically come with installers that automatically add the entry properly to the repolist. Hell a plugin could probably be developed to handle this! Just remember that these are not the definitive steps to installing the plugin, and it is up to the developer to mention an alternative method should there be one.
+
+## Developing
+In the event that you've made the decision develop a plugin using Allium, there's some pretty important information you'll want to know about.
+
+1. On startup, Allium pulls the latest version committed to the master branch. Generally these will be __Stable__, non-breaking changes. However, if you don't trust me (I wouldn't), you can always replace `master` with a specific commit hash. This is especially useful for prospective Allium server operators (I can't see a high demand for them...), preventing me from being able to push an update that will `/summon minecraft:creeper` on repeat within your server is generally a good idea. 
+
+2. If you're really not liking Allium constantly reinstalling, like myself (many a time did the auto update script overwrite a file), simply create a file in the root directory titled `debug.cfg` and plonk the boolean value `true` into it. This will prevent Allium from repeatedly downloading and further prevent me from pushing updates that will `/tp @a 0 0 0` on repeat from within your precious server. _However_, if you enable this option it also prevents other plugins from updating. Depending on the circumstance that may be something you want.
+
+3. Have a look at the documentation provided in this wiki, in no particular order:
+    - [Formatting Codes](https://github.com/hugeblank/Allium/wiki/Formatting-Codes)
+    - [Allium API Documentation](https://github.com/hugeblank/Allium/wiki/Allium-API)
+    - [Register API Documentation](https://github.com/hugeblank/Allium/wiki/Register-API)
+    - [Command Parameter Documentation](https://github.com/hugeblank/Allium/wiki/Command-Parameter)
+
+4. It's also generally beneficial to be aware of the things that are getting added to Allium before thay're released. If you're interested in that, try cloning the [unstable branch](https://github.com/hugeblank/Allium/tree/unstable-as), or simply change the `repolist.csh` file to pull from the `unstable-as` branch. Documentation on the unstable branch can be found [here](https://github.com/hugeblank/Allium/wiki/Unstable)

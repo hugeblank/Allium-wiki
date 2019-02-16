@@ -18,6 +18,20 @@ Register a thread within this plugin
 - **Returns**
   - _table_: wrapped Raisin thread (see Raisin's thread API [documentation](https://github.com/hugeblank/raisin/wiki))
 
+#### `module`
+Register an API for this plugin
+- **Parameters**
+  - _table_: API to be made external
+- **Returns**
+  - _none_
+
+#### `require`
+Request a module from a specific plugin
+- **Parameters**
+  - _string_: Plugin ID
+- **Returns**
+  - _table_: The requested plugin module
+
 #### `setPersistence`
 Sets data that will remain persistent across a reboot of Allium.
 - **Parameters**
