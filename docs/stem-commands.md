@@ -7,4 +7,4 @@ Provides a friendly help menu that gives information about every plugin and comm
 Provides a link to the Allium repository.
 ***
 ### !allium:plugins
-Provides a list of all plugins that you have installed, based on their directory name.
+Provides a list of all plugins that you have installed, based on the name they registered with.
