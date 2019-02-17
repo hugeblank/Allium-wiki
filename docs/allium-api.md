@@ -1,6 +1,6 @@
 The following API is loaded on execution of Allium, and placed into the global environment. All functions located here are called by prefixing `allium.` to the function name.
 
-# Functions
+## Functions
 #### `assert`
 Lua's generic assert, with the ability to set the error level
 
@@ -22,7 +22,7 @@ Sanitize plugin names to meet Plugin ID standards
 
 
 #### `tell`
-Output [formatted](docs/formatting.md) text
+Output [formatted](docs/color-formatting.md) text
 
 - **Parameters**
   - _string_: name of user
@@ -90,7 +90,7 @@ Register an Allium plugin
   - _table_: list of functions, see [Register API](docs/register-api.md)
 
 ---
-# Events
+## Events
 #### `player_join`
 Fired when a player joins
 **Parameters**
@@ -104,5 +104,5 @@ Fired when a player leaves
   - _string_ username
 
 ---
-# Other
+## Other
 _string_ `side`: The location of the chat recorder that allium is using

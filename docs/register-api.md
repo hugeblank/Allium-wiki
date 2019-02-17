@@ -1,13 +1,13 @@
 The following API is returned from [`allium.register`](docs/allium-api.md), in a table. 
 
-# Functions:
+## Functions
 #### `command`
 Register a command within this plugin
 
 - **Parameters**
   - _string_: command name
   - _function_: function to execute
-  - _string_: information about the command
+  - _string_: information about the command __OR__ _table_: info about the command in a table that meets the [info formatting](docs/info-formatting.md) standard
   - _[string]_: command usage formatted as `<required | first | arguments> [optional | second | arguments]`
 - **Returns**
   - _none_
