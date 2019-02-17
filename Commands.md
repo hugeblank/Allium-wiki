@@ -9,4 +9,4 @@ Provides a link to the Allium repository.
 ### !allium:plugins
 Provides a list of all plugins that you have installed, based on their directory name.
 ***
-Read Next: [Formatting Codes](https://github.com/hugeblank/Allium/wiki/Formatting-Codes)
+Read Next: [Formatting Codes](Formatting-Codes.md)

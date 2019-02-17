@@ -58,9 +58,9 @@ In the event that you've made the decision develop a plugin using Allium, there'
 2. If you're really not liking Allium constantly reinstalling, like myself (many a time did the auto update script overwrite a file), simply create a file in the root directory titled `debug.cfg` and plonk the boolean value `true` into it. This will prevent Allium from repeatedly downloading and further prevent me from pushing updates that will `/tp @a 0 0 0` on repeat from within your precious server. _However_, if you enable this option it also prevents other plugins from updating. Depending on the circumstance that may be something you want.
 
 3. Have a look at the documentation provided in this wiki, in no particular order:
-    - [Formatting Codes](https://github.com/hugeblank/Allium/wiki/Formatting-Codes)
-    - [Allium API Documentation](https://github.com/hugeblank/Allium/wiki/Allium-API)
-    - [Register API Documentation](https://github.com/hugeblank/Allium/wiki/Register-API)
-    - [Command Parameter Documentation](https://github.com/hugeblank/Allium/wiki/Command-Parameter)
+    - [Formatting Codes](Formatting-Codes.md)
+    - [Allium API Documentation](Allium-API.md)
+    - [Register API Documentation](Register-API.md)
+    - [Command Parameter Documentation](Command-Parameter.md)
 
-4. It's also generally beneficial to be aware of the things that are getting added to Allium before thay're released. If you're interested in that, try cloning the [unstable branch](https://github.com/hugeblank/Allium/tree/unstable-as), or simply change the `repolist.csh` file to pull from the `unstable-as` branch. Documentation on the unstable branch can be found [here](https://github.com/hugeblank/Allium/wiki/Unstable)
+4. It's also generally beneficial to be aware of the things that are getting added to Allium before thay're released. If you're interested in that, try cloning the [unstable branch](https://github.com/hugeblank/Allium/tree/unstable-as), or simply change the `repolist.csh` file to pull from the `unstable-as` branch. Documentation on the unstable branch can be found [here](Unstable.md)

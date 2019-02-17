@@ -1,4 +1,4 @@
-The following API is returned from [`allium.register`](https://github.com/hugeblank/Allium/wiki/Allium-API), in a table. 
+The following API is returned from [`allium.register`](Allium-API.md), in a table. 
 
 ## Functions:
 #### `command`
@@ -47,4 +47,4 @@ Sets data that will remain persistent across a reboot of Allium.
 - **Returns**
   - _any_: data that was assigned to that value
 ---
-Read Next: [Command Parameter Documentation](https://github.com/hugeblank/Allium/wiki/Command-Parameter)
+Read Next: [Command Parameter Documentation](Command-Parameter.md)

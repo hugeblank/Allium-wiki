@@ -18,7 +18,7 @@ Sanitize plugin names to meet Plugin ID standards
   - _string_: valid allium plugin/command ID
 
 #### `tell`
-Output [formatted](https://github.com/hugeblank/Allium/wiki/Formatting-Codes) text
+Output [formatted](Formatting-Codes.md) text
 - **Parameters**
   - _string_: name of user
   - _string_: text __OR__ _table_: list of text
@@ -70,7 +70,7 @@ Register an Allium plugin
   - _string_: plugin name, converted to allium plugin ID
   - _[string]_: optional manually set human readable plugin name
 - **Returns**
-  - _table_: list of functions, see [Register API](https://github.com/hugeblank/Allium/wiki/Register-API)
+  - _table_: list of functions, see [Register API](Register-API.md)
 ---
 ## Events: 
 #### player_join
@@ -87,4 +87,4 @@ Fired when a player leaves
 _string_ `side`: The location of the chat recorder that allium is using
 
 ---
-Read Next: [Register API Documentation](https://github.com/hugeblank/Allium/wiki/Register-API)
+Read Next: [Register API Documentation](Register-API.md)
