@@ -1,8 +1,9 @@
-The following API is returned from [`allium.register`](Allium-API.md), in a table. 
+The following API is returned from [`allium.register`](docs/allium-api.md), in a table. 
 
-## Functions:
+# Functions:
 #### `command`
 Register a command within this plugin
+
 - **Parameters**
   - _string_: command name
   - _function_: function to execute
@@ -13,6 +14,7 @@ Register a command within this plugin
 
 #### `thread`
 Register a thread within this plugin
+
 - **Parameters**
   - _function_: function to turn into a thread
 - **Returns**
@@ -20,6 +22,7 @@ Register a thread within this plugin
 
 #### `module`
 Register an API for this plugin
+
 - **Parameters**
   - _table_: API to be made external
 - **Returns**
@@ -27,6 +30,7 @@ Register an API for this plugin
 
 #### `require`
 Request a module from a specific plugin
+
 - **Parameters**
   - _string_: Plugin ID
 - **Returns**
@@ -34,6 +38,7 @@ Request a module from a specific plugin
 
 #### `setPersistence`
 Sets data that will remain persistent across a reboot of Allium.
+
 - **Parameters**
   - _string_: name of the persistent value
   - _any_: data to assign to value
@@ -42,9 +47,8 @@ Sets data that will remain persistent across a reboot of Allium.
 
 #### `getPersistence`
 Sets data that will remain persistent across a reboot of Allium.
+
 - **Parameters**
   - _string_: name of the persistent value
 - **Returns**
   - _any_: data that was assigned to that value
----
-Read Next: [Command Parameter Documentation](Command-Parameter.md)

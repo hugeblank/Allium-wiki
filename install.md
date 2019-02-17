@@ -1,9 +1,10 @@
-Let's get you into the realm of Allium! This is a 10 minute read if you decide to read the entire thing, which is very highly recommended. Just because it's titled "installation" doesn't mean it doesn't have anything useful for developers, and jsut because it's titled "developing" doesn't mean it doesn't contain information of use for people who want to install. However that may just be me being a cynic mixed with pride for my own work. Just continue reading...
+# Installing Allium 
 
-## Installation
 To install Allium, run this command in a **Command Computer** with a **Plethora Creative Chat Module**. It's that simple!
 
-`pastebin run LGwrkjxm`
+```
+pastebin run LGwrkjxm
+```
 
 The installer installs:
 
@@ -19,12 +20,15 @@ The installer installs:
 
 - persistence.ltn - A _Lua Table Notation_ file containing all serialized persistence entries for each plugin.
 
-## Installing Plugins
+# Installing Plugins
+
 Installing plugins is just as simple as Installing Allium! All you need to do is add some information into the `repolist.csh` file.
 
 The `repolist.csh` file is simply a list of CraftOS commands that are to be executed one after the other. To install a plugin from github for example, since `gitget` is installed by Allium, one could do something like:
 
-```gitget username plugin_repo commit_hash /plugins/plugin_name```
+```
+gitget username plugin_repo commit_hash /plugins/plugin_name
+```
 
 Where:
 - `username` is the github username of the developer
@@ -34,13 +38,17 @@ Where:
 
 Gitget is not the only method of obtaining plugins, but it is one of the safest. You could also use `pastebin` or `wget` if you so fancy:
 
-```pastebin get paste_code /plugins/plugin_name```
+```
+pastebin get paste_code /plugins/plugin_name
+```
 
 Where:
 - `paste_code` is the 10 or so digit base-64 pastebin code found at the end of the URL
 - `/plugins/plugin_name` is the location you want to install the plugin
 
-```wget url /plugins/plugin_name```
+```
+wget url /plugins/plugin_name
+```
 
 Where:
 - `url` is the URL of the plugin
@@ -50,17 +58,16 @@ __NOTE 1__ Plugins will only be loaded if they are within the `/plugins` directo
 
 __NOTE 2__ There are _MANY_ more ways to install plugins, some could theoretically come with installers that automatically add the entry properly to the repolist. Hell a plugin could probably be developed to handle this! Just remember that these are not the definitive steps to installing the plugin, and it is up to the developer to mention an alternative method should there be one.
 
-## Developing
-In the event that you've made the decision develop a plugin using Allium, there's some pretty important information you'll want to know about.
+# Installing for Devs
 
-1. On startup, Allium pulls the latest version committed to the master branch. Generally these will be __Stable__, non-breaking changes. However, if you don't trust me (I wouldn't), you can always replace `master` with a specific commit hash. This is especially useful for prospective Allium server operators (I can't see a high demand for them...), preventing me from being able to push an update that will `/summon minecraft:creeper` on repeat within your server is generally a good idea. 
+In the event that you've made the decision develop a plugin using Allium or admininstrate a server with Allium, there's some pretty important information you'll want to know about.
 
-2. If you're really not liking Allium constantly reinstalling, like myself (many a time did the auto update script overwrite a file), simply create a file in the root directory titled `debug.cfg` and plonk the boolean value `true` into it. This will prevent Allium from repeatedly downloading and further prevent me from pushing updates that will `/tp @a 0 0 0` on repeat from within your precious server. _However_, if you enable this option it also prevents other plugins from updating. Depending on the circumstance that may be something you want.
+- On startup, Allium pulls the latest version committed to the master branch. Generally these will be __stable__, non-breaking changes. However, if you don't trust me (I wouldn't), you can always replace `master` with a specific commit hash. This is especially useful for prospective Allium server operators (I can't see a high demand for them...), preventing me from being able to push an update that will `/summon minecraft:creeper` on repeat within your server is generally a good idea. 
 
-3. Have a look at the documentation provided in this wiki, in no particular order:
-    - [Formatting Codes](Formatting-Codes.md)
-    - [Allium API Documentation](Allium-API.md)
-    - [Register API Documentation](Register-API.md)
-    - [Command Parameter Documentation](Command-Parameter.md)
+- If you're really not liking Allium constantly reinstalling, like myself (many a time did the auto update script overwrite a file), simply create a file in the root directory titled `debug.cfg` and plonk the boolean value `true` into it. This will prevent Allium from repeatedly downloading and further prevent me from pushing updates that will `/tp @a 0 0 0` on repeat from within your precious server.  
 
-4. It's also generally beneficial to be aware of the things that are getting added to Allium before thay're released. If you're interested in that, try cloning the [unstable branch](https://github.com/hugeblank/Allium/tree/unstable-as), or simply change the `repolist.csh` file to pull from the `unstable-as` branch. Documentation on the unstable branch can be found [here](Unstable.md)
+- Have a look at the documentation provided in this wiki.
+
+- It's also generally beneficial to be aware of the things that are getting added to Allium before thay're released. If you're interested in that, try cloning the [unstable branch](https://github.com/hugeblank/Allium/tree/unstable-as), or simply change the `repolist.csh` file to pull from the `unstable-as` branch. Documentation on the unstable branch can be found [here](docs/unstable.md)
+
+Warning: If debug mode is enabled it prevents all plugins from updating. Depending on what you're doing this may be undesired behaviour.

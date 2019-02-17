@@ -1,9 +1,0 @@
-- [Home](index.md)
-- [Getting Started](Getting-Started.md)
-- [Stem Commands](Commands.md)
-- Documentation
-  - [Formatting](Formatting-Codes.md)
-  - [Allium API](Allium-API.md)
-  - [Register API](Register-API.md)
-  - [Command Parameters](Command-Parameters.md)
-  - [Unstable Functions](Unstable.md)
