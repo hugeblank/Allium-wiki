@@ -88,11 +88,11 @@ After we've selected that it puts it into our suggestion clickable within the UI
 This is the same command we used to get started so in the situation that you wanted to continue in an infinite help loop, keep clicking! :P
 
 ## Quoting Parameters
-I decided to make this a seperate heading from the above because it's less focused on the stem plugin and more on how Allium interprets arguments. The gist of it is parameters that have quotes around them get added into the command parameter argument table as one index. The twist is the quote can be in the middle of an argument. For example: 
+I decided to make this a seperate heading from the above because it's less focused on the stem plugin and more on how Allium interprets arguments. The gist of it is parameters that have quotes around them get added into the command parameter argument table as one index. So you could have something like:
+```
+!democommand argument1 "argument number two"
+```
+Now `"argument number two"` will be in one table entry instead of three.
 
-```param1 param2-"is now this quoted stuff and 'param2-'."```
-
-The first argument is simply "param1", but the second argument is _all_ of the remaining text. This may seem counterintuitive but it adds some pretty neat features. The help command would be difficult to implement without this. 
-
-^ I take this back, it will be unimplemented in the next unstable patch. Quotes will behave less quirky.
-
+## Command Parameter Data
+An additional index within the third data parameter has been added. `.uuid` will now provide the UUID of the user that called the command.
