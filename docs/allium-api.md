@@ -31,6 +31,14 @@ Output [formatted](docs/color-formatting.md) text
 - **Returns**
   - _string_: execution results
 
+#### `execute`
+Execute a command as a player
+
+- **Parameters**
+ - _string_: Username of target
+ - _string_: Command to execute with parameters
+- **Returns**
+ - _none_
 
 #### `getPlayers`
 Lists all online players
@@ -57,18 +65,6 @@ Get the human readable name from the plugin ID
   - _string_: allium plugin ID
 - **Returns**
   - _string_: human readable plugin name
-
-
-#### `getPosition`
-Get the position of a player
-
-- **Parameters**
-  - _string_: Username of target
-- **Returns**
-  - _number_: x coordinate of player
-  - _number_: y coordinate of player
-  - _number_: z coordinate of player
-
 
 #### `forEachPlayer`
 Perform an operation on each player

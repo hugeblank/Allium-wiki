@@ -28,7 +28,7 @@ Register an API for this plugin
 - **Returns**
   - _none_
 
-#### `require`
+#### `import`
 Request a module from a specific plugin
 
 - **Parameters**
