@@ -5,6 +5,7 @@ To install Allium, run this command in a **Command Computer** with a **Plethora 
 ```
 pastebin run LGwrkjxm
 ```
+Note: This method only functions for the latest version of Allium. If you need a legacy version of Allium for whatever reason, install a repo downloader like [`gitget`](https://pastebin.com/W5ZkVYSi) by Apemanzilla, or my `gget` and install the tagged version
 
 The installer installs:
 
@@ -12,7 +13,7 @@ The installer installs:
 
 - The Raisin Repo - raisin/raisin.lua, raisin/readme.md
 
-- Apemanzilla's [gitget](http://www.computercraft.info/forums2/index.php?/topic/17387-gitget-version-2-release/), a github repository downloader that is necessary to download Allium, and the plugins that can be installed. 
+- My [gget](https://github.com/hugeblank/qs-cc/tree/master/src/gget.lua), a github repository downloader that is necessary to download Allium, and the plugins that can be installed. 
 
 - repolist.csh - A _Craftos SHell_ file, where you can gitget various plugins and utilities and keep them up to date.
 
@@ -24,19 +25,19 @@ The installer installs:
 
 Installing plugins is just as simple as Installing Allium! All you need to do is add some information into the `repolist.csh` file.
 
-The `repolist.csh` file is simply a list of CraftOS commands that are to be executed one after the other. To install a plugin from github for example, since `gitget` is installed by Allium, one could do something like:
+The `repolist.csh` file is simply a list of CraftOS commands that are to be executed one after the other. To install a plugin from github for example, since `gget` is installed by Allium, one could do something like:
 
 ```
-gitget username plugin_repo commit_hash /plugins/plugin_name
+/lib/gget username plugin_repo branch /plugins/plugin_name
 ```
 
 Where:
 - `username` is the github username of the developer
 - `plugin_repo` is the repository on that user's profile where the plugin is located
-- `commit_hash` is a safe commit hash to clone from
+- `branch` is a safe commit hash/tag/branch to clone from
 - `/plugins/plugin_name` is the location where you want to install the plugin
 
-Gitget is not the only method of obtaining plugins, but it is one of the safest. You could also use `pastebin` or `wget` if you so fancy:
+Gget is not the only method of obtaining plugins, but it is one of the safest. You could also use `pastebin` or `wget` if you so fancy:
 
 ```
 pastebin get paste_code /plugins/plugin_name
@@ -54,9 +55,9 @@ Where:
 - `url` is the URL of the plugin
 - `/plugins/plugin_name` is the location you want to install the plugin
 
-__NOTE 1__ Plugins will only be loaded if they are within the `/plugins` directory. If the plugin is a single file then it is not necessary to install into a seperate directory, but for consistency it's a good idea. Certain plugins may depend on multiple files to execute, it's in this case where a directory is almost always necessary.
+Tip: Plugins will only be loaded if they are within the `/plugins` directory. If the plugin is a single file then it is not necessary to install into a seperate directory, but for consistency it's a good idea. Certain plugins may depend on multiple files to execute, it's in this case where a directory is almost always necessary.
 
-__NOTE 2__ There are _MANY_ more ways to install plugins, some could theoretically come with installers that automatically add the entry properly to the repolist. Hell a plugin could probably be developed to handle this! Just remember that these are not the definitive steps to installing the plugin, and it is up to the developer to mention an alternative method should there be one.
+Note: There are _MANY_ more ways to install plugins, some could theoretically come with installers that automatically add the entry properly to the repolist. Hell a plugin could probably be developed to handle this! Just remember that these are not the definitive steps to installing the plugin, and it is up to the developer to mention an alternative method should there be one.
 
 # Installing for Devs
 
