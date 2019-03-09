@@ -13,7 +13,7 @@ The installer installs:
 
 - The Raisin Repo - raisin/raisin.lua, raisin/readme.md
 
-- My [gget](https://github.com/hugeblank/qs-cc/tree/master/src/gget.lua), a github repository downloader that is necessary to download Allium, and the plugins that can be installed. 
+- Several different utilities for plugin developers and administrators, see [Utilities](docs/utilities.md).
 
 - repolist.csh - A _Craftos SHell_ file, where you can gitget various plugins and utilities and keep them up to date.
 

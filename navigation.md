@@ -12,6 +12,7 @@
   * [Color Formatting](docs/color-formatting.md)
   * [Info Formatting](docs/info-formatting.md)
   * [Stem Plugin](docs/stem-commands.md)
+  * [Utilities](docs/utilities.md)
   - - - -
   * # Advanced Info
   * [Unstable Changes](docs/unstable.md)

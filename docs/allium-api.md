@@ -85,6 +85,23 @@ Register an Allium plugin
 - **Returns**
   - _table_: list of functions, see [Register API](docs/register-api.md)
 
+#### `verify`
+Compare one or two SemVer strings to the Allium version
+
+- **Parameters**
+  - _string_: minimum version
+  - _string_: maximum version
+- **Returns**
+  - _boolean_: true when the min version exists and is *lt* Allium's version and the max version exists and is *gt* Allium's version
+
+#### `getVersion`
+Get the SemVer table of a plugin
+
+- **Parameters**
+  - _string_: plugin ID
+- **Returns**
+  - _table_: parsed SemVer table, see [SemParse](https://github.com/hugeblank/semparse)
+
 ---
 ## Events
 #### `player_join`
@@ -102,3 +119,4 @@ Fired when a player leaves
 ---
 ## Other
 _string_ `side`: The location of the chat recorder that allium is using
+_table_ `version`: Allium's current version, parsed as a SemVer table
