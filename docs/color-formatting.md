@@ -1,6 +1,9 @@
+# Color Formatting
+
 The following characters are all valid for formatting in `allium.tell` when prefixxed with an `&`:
 
 ## Colors
+
 - r - reset formatting
 - 0 - black
 - 1 - dark blue
@@ -20,12 +23,14 @@ The following characters are all valid for formatting in `allium.tell` when pref
 - f - white
 
 ## Actions
+
 - g - execute text | `&g(!allium:help)Click for help!&r`
 - h - hover text | `&h(Hi there :P)Mouse over me!&r`
 - i - clickable link | `&i(https://google.com)Go to google!&r`
 - s - suggest text | `&s(I'm in your bar now!)Click on me!&r`
 
 ## Emphases
+
 - k - obfuscated
 - l - bold
 - m - strikethrough

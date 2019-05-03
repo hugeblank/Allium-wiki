@@ -1,18 +1,22 @@
+# Allium API
+
 The following API is loaded on execution of Allium, and placed into the global environment. All functions located here are called by prefixing `allium.` to the function name.
 
 ## Functions
-#### `assert`
+
+### `assert`
+
 Lua's generic assert, with the ability to set the error level
 
 - **Parameters**
-    - _boolean_: condition to test
-    - _string_: error message
-    - _[number]_: error level + 3 | Default: `3`
+  - _boolean_: condition to test
+  - _string_: error message
+  - _[number]_: error level + 3 | Default: `3`
 - **Returns**
-    - _none_
+  - _none_
 
+### `sanitize`
 
-#### `sanitize`
 Sanitize plugin names to meet Plugin ID standards
 
 - **Parameters**
@@ -20,27 +24,29 @@ Sanitize plugin names to meet Plugin ID standards
 - **Returns**
   - _string_: valid allium plugin/command ID
 
+### `tell`
 
-#### `tell`
 Output [formatted](docs/color-formatting.md) text
 
 - **Parameters**
   - _string_: name of user
   - _string_: text __OR__ _table_: list of text
-  * _[string]_: label replacement __OR__ _[boolean]_: hide label
+  - _[string]_: label replacement __OR__ _[boolean]_: hide label
 - **Returns**
   - _string_: execution results
 
-#### `execute`
+### `execute`
+
 Execute a command as a player
 
 - **Parameters**
- - _string_: Username of target
- - _string_: Command to execute with parameters
+  - _string_: Username of target
+  - _string_: Command to execute with parameters
 - **Returns**
- - _none_
+  - _none_
 
-#### `getPlayers`
+### `getPlayers`
+
 Lists all online players
 
 - **Parameters**
@@ -48,17 +54,17 @@ Lists all online players
 - **Returns**
   - _table_: list of online players
 
+### `getInfo`
 
-#### `getInfo`
 Get information data for one or all plugins
 
 - **Parameters**
-  * _[string]_: allium plugin ID
+  - _[string]_: allium plugin ID
 - **Returns**
   - _table_: table of information organized as `table[plugin][command] = information`
 
+### `getName`
 
-#### `getName`
 Get the human readable name from the plugin ID
 
 - **Parameters**
@@ -66,7 +72,8 @@ Get the human readable name from the plugin ID
 - **Returns**
   - _string_: human readable plugin name
 
-#### `forEachPlayer`
+### `forEachPlayer`
+
 Perform an operation on each player
 
 - **Parameters**
@@ -75,17 +82,19 @@ Perform an operation on each player
   - _boolean_: operation result
   - _string_: error if the operation failed
 
+### `register`
 
-#### `register`
 Register an Allium plugin
 
 - **Parameters**
   - _string_: plugin name, converted to allium plugin ID
-  * _[string]_: optional manually set human readable plugin name
+  - _string_: semver string
+  - _[string]_: optional manually set human readable plugin name
 - **Returns**
   - _table_: list of functions, see [Register API](docs/register-api.md)
 
-#### `verify`
+### `verify`
+
 Compare one or two SemVer strings to the Allium version
 
 - **Parameters**
@@ -94,7 +103,8 @@ Compare one or two SemVer strings to the Allium version
 - **Returns**
   - _boolean_: true when the min version exists and is *lt* Allium's version and the max version exists and is *gt* Allium's version
 
-#### `getVersion`
+### `getVersion`
+
 Get the SemVer table of a plugin
 
 - **Parameters**
@@ -103,20 +113,26 @@ Get the SemVer table of a plugin
   - _table_: parsed SemVer table, see [SemParse](https://github.com/hugeblank/semparse)
 
 ---
+
 ## Events
-#### `player_join`
+
+### `player_join`
+
 Fired when a player joins
 **Parameters**
 
-  - _string_ username
+- _string_ username
 
-#### `player_quit`
+### `player_quit`
+
 Fired when a player leaves
 **Parameters**
 
-  - _string_ username
+- _string_ username
 
 ---
+
 ## Other
+
 _string_ `side`: The location of the chat recorder that allium is using
 _table_ `version`: Allium's current version, parsed as a SemVer table

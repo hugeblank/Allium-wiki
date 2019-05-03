@@ -1,7 +1,11 @@
-The following API is returned from [`allium.register`](docs/allium-api.md), in a table. 
+# Register API
+
+The following API is returned from [`allium.register`](docs/allium-api.md), in a table. This is the API provided when you register a plugin.
 
 ## Functions
-#### `command`
+
+### `command`
+
 Register a command within this plugin
 
 - **Parameters**
@@ -12,7 +16,8 @@ Register a command within this plugin
 - **Returns**
   - _none_
 
-#### `thread`
+### `thread`
+
 Register a thread within this plugin
 
 - **Parameters**
@@ -20,7 +25,8 @@ Register a thread within this plugin
 - **Returns**
   - _table_: wrapped Raisin thread (see Raisin's thread API [documentation](https://github.com/hugeblank/raisin/wiki))
 
-#### `module`
+### `module`
+
 Register an API for this plugin
 
 - **Parameters**
@@ -28,7 +34,8 @@ Register an API for this plugin
 - **Returns**
   - _none_
 
-#### `import`
+### `import`
+
 Request a module from a specific plugin
 
 - **Parameters**
@@ -36,7 +43,8 @@ Request a module from a specific plugin
 - **Returns**
   - _table_: The requested plugin module
 
-#### `setPersistence`
+### `setPersistence`
+
 Sets data that will remain persistent across a reboot of Allium.
 
 - **Parameters**
@@ -45,7 +53,8 @@ Sets data that will remain persistent across a reboot of Allium.
 - **Returns**
   - _none_
 
-#### `getPersistence`
+### `getPersistence`
+
 Sets data that will remain persistent across a reboot of Allium.
 
 - **Parameters**
