@@ -1,6 +1,6 @@
 # Allium API
 
-The following API is loaded on execution of Allium, and placed into the global environment. All functions located here are called by prefixing `allium.` to the function name.
+The following API is loaded on execution of Allium, and placed into the global environment. All functions located here are returned by requiring `allium`. Any references to anything on this page will refer to it by `allium.<name>`. This assumes that the variable allocated for requiring the Allium API is called `allium`.
 
 ## Functions
 
@@ -54,6 +54,15 @@ Lists all online players
 - **Returns**
   - _table_: list of online players
 
+### `getPosition`
+
+Gets the position, dimension, or rotation of a player or entity
+
+- **Parameters**
+  - _string_: name or UUID of player/entity
+- **Returns**
+  - _table_: Table containing a `position` table (where indices 1, 2, and 3 correspond to x, y, and z), a `rotation` table (where indices 1 and 2 correspond to x and y rotation), and a `dimension` number (where 0 is overworld, -1 is nether, and 1 is the end)
+
 ### `getInfo`
 
 Get information data for one or all plugins
@@ -95,13 +104,13 @@ Register an Allium plugin
 
 ### `verify`
 
-Compare one or two SemVer strings to the Allium version
+Compares two SemVer strings to the Allium version, or checks the equality of one
 
 - **Parameters**
-  - _string_: minimum version
-  - _string_: maximum version
+  - _string_: minimum version or version to check the equality of
+  - _[string]_: maximum version
 - **Returns**
-  - _boolean_: true when the min version exists and is *lt* Allium's version and the max version exists and is *gt* Allium's version
+  - _boolean_: true when the min version exists and is *lt* Allium's version and the max version exists and is *gt* Allium's version. If a single version was given, returns true if the versions were equal, false otherwise.
 
 ### `getVersion`
 
