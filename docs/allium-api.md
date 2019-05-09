@@ -26,7 +26,7 @@ Sanitize plugin names to meet Plugin ID standards
 
 ### `tell`
 
-Output [formatted](docs/color-formatting.md) text
+Output [formatted](color-formatting.md) text
 
 - **Parameters**
   - _string_: name of user
@@ -100,7 +100,7 @@ Register an Allium plugin
   - _string_: semver string
   - _[string]_: optional manually set human readable plugin name
 - **Returns**
-  - _table_: list of functions, see [Register API](docs/register-api.md)
+  - _table_: list of functions, see [Register API](register-api.md)
 
 ### `verify`
 

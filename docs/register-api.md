@@ -1,6 +1,6 @@
 # Register API
 
-The following API is returned from [`allium.register`](docs/allium-api.md), in a table. This is the API provided when you register a plugin.
+The following API is returned from [`allium.register`](allium-api.md), in a table. This is the API provided when you register a plugin.
 
 ## Functions
 
@@ -11,7 +11,7 @@ Register a command within this plugin
 - **Parameters**
   - _string_: command name
   - _function_: function to execute
-  - _string_: information about the command __OR__ _table_: info about the command in a table that meets the [info formatting](docs/info-formatting.md) standard
+  - _string_: information about the command __OR__ _table_: info about the command in a table that meets the [info formatting](info-formatting.md) standard
 - **Returns**
   - _none_
 

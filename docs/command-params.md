@@ -1,6 +1,6 @@
 # Command Parameters
 
-As a plugin developer several tools and utilities are provided to make programming with Allium that much easier. As you hopefully already know from reading the [Register API Documentation](docs/register-api.md), registering a command takes in a function. When that function is executed it is given a few arguments:
+As a plugin developer several tools and utilities are provided to make programming with Allium that much easier. As you hopefully already know from reading the [Register API Documentation](register-api.md), registering a command takes in a function. When that function is executed it is given a few arguments:
 
 `command = function(name, arguments, data)`
 
