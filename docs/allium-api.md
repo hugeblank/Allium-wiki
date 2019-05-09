@@ -104,13 +104,12 @@ Register an Allium plugin
 
 ### `verify`
 
-Compares two SemVer strings to the Allium version, or checks the equality of one
+Takes in a range of versions (`>= 0.7.0 && < 1.0.0`), comparison of a version (`> 1.12.3`), or an expicit version (`1.1.2`) to put against the current Allium version. All versions must be [SemVer](https://semver.org) compliant.
 
 - **Parameters**
-  - _string_: minimum version or version to check the equality of
-  - _[string]_: maximum version
+  - _string_: version comparison operation
 - **Returns**
-  - _boolean_: true when the min version exists and is *lt* Allium's version and the max version exists and is *gt* Allium's version. If a single version was given, returns true if the versions were equal, false otherwise.
+  - _boolean_: true when Allium's version meets the criterea
 
 ### `getVersion`
 
