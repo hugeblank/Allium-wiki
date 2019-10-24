@@ -35,7 +35,7 @@ Where:
 - `branch` is a safe commit hash/tag/branch to clone from
 - `/plugins/plugin_name` is the location where you want to install the plugin
 
-Gget is not the only method of obtaining plugins, but it is one of the safest. You could also use `pastebin` or `wget` if you so fancy:
+Gget is not the only method of obtaining plugins, but it guarantees you're getting all the files. You could also use `pastebin` or `wget` for single file plugins. For `pastebin`:
 
     pastebin get paste_code /plugins/plugin_name
 
@@ -44,11 +44,13 @@ Where:
 - `paste_code` is the 10 or so digit base-64 pastebin code found at the end of the URL
 - `/plugins/plugin_name` is the location you want to install the plugin
 
+And for `wget`:
+
     wget url /plugins/plugin_name
 
 Where:
 
-- `url` is the URL of the plugin
+- `url` is the URL of the plugin file
 - `/plugins/plugin_name` is the location you want to install the plugin
 
 Tip: Plugins will only be loaded if they are within the `/plugins` directory. If the plugin is a single file then it is not necessary to install into a seperate directory, but for consistency it's a good idea. Certain plugins may depend on multiple files to execute, it's in this case where a directory is almost always necessary.
