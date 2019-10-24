@@ -31,6 +31,7 @@ Allium's depman instance & listing has been moved to its own GH repo! This all s
 - Added .lson extension where needed
 - Fix plugin code cleanup
 - Added 'position' infill method.
+- Added `allium.log/warn` methods, enabling plugin devs to provide informative output.
 
 #### To Do
 
