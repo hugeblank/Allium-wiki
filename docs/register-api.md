@@ -60,3 +60,4 @@ Sets data that will remain persistent across a reboot of Allium.
   - _string_: name of the persistent value
 - **Returns**
   - _any_: data that was assigned to that value
+  
