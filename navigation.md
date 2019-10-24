@@ -16,11 +16,12 @@
 * [Color Formatting](docs/color-formatting.md)
 * [Info Formatting](docs/info-formatting.md)
 * [Stem Plugin](docs/stem-commands.md)
-* [Utilities](docs/utilities.md)
 
 - - - -
 
 * ## Advanced Info
 
 * [Unstable Changes](docs/unstable.md)
+* [Utilities](docs/utilities.md)
 * [Command Parameters](docs/command-params.md)
+* [Allium Configs](docs/config-layout.md)

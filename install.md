@@ -63,7 +63,7 @@ In the event that you've made the decision develop a plugin using Allium or admi
 
 - On startup, Allium pulls the latest version committed to the master branch. Generally these will be __stable__, non-breaking changes. However, if you don't trust me (I wouldn't), you can always replace `master` with a specific commit hash. This is especially useful for prospective Allium server operators (I can't see a high demand for them...), preventing me from being able to push an update that will `/summon minecraft:creeper` on repeat within your server is generally a good idea.
 
-- If you're really not liking Allium constantly reinstalling, like myself (many a time did the auto update script overwrite a file), simply create a file in the root directory titled `debug.cfg` and plonk the boolean value `true` into it. This will prevent Allium from repeatedly downloading and further prevent me from pushing updates that will `/tp @a 0 0 0` on repeat from within your precious server.  
+- If you're really not liking Allium constantly reinstalling, like myself (many a time did the auto update script overwrite a file), take a look at the [Allium Config](config-layout.md)
 
 - Have a look at the documentation provided in this wiki.
 
