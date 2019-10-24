@@ -35,3 +35,5 @@ Allium's depman instance & listing has been moved to its own GH repo! This all s
 #### To Do
 
 - Revisit color.lua
+- Update notifications/button in terminal
+- Safe Terminate/Reboot/Shutdown buttons
