@@ -4,27 +4,32 @@
 
 To install Allium, run this command in a **Command Computer** with a **Plethora Creative Chat Module**. It's that simple!
 
-    pastebin run LGwrkjxm
+    pastebin run LGwrkjxm [path]
+
+- `[path]`: Optional path to place Allium
 
 Note: This method only functions for the latest version of Allium. If you need a legacy version of Allium for whatever reason, install a repo downloader like [`gitget`](https://pastebin.com/W5ZkVYSi) by Apemanzilla, or my `gget` and install the tagged version
 
-The installer installs:
+The installer installs all the following in the selected path (defaults to `/`):
 
-- The Allium Repo - The main loader and stem plugin.
+- `allium.lua`: The plugin loader herself
+- `startup.lua`: Initializer script used to run Allium
+- `plugins/`: Directory to place all plugins
+  - `allium-stem.lua`: Core Allium plugin, provides basic commands
+- `cfg/`: Directory for all config files
+  - `allium.lson`: Config options for Allium that can be changed by the administrator
+  - *`dependencies.lson`: Dependency data meant for the Depman instance
+  - *`persistence.lson`: Plugin data intended to persist over restarts
+  - *`version.lson`: Information about the current version of Allium
+- `lib/`: Directory for all utilities, listed [here](docs/utilities.md)
 
-- Several different utilities for plugin developers and administrators, see [Utilities](docs/utilities.md).
-
-- repolist.csh - A _Craftos SHell_ file, where you can gitget various plugins and utilities and keep them up to date.
-
-- startup.lua - startup file that runs the repolist file, then runs Allium. If Allium crashes/exits it will reboot after 5 seconds unless interrupted.
-
-- persistence.lson - A _Lua Serialized Object Notation_ file containing all serialized persistence entries for each plugin.
+Note: Files that have a * before them are not meant to be modified by you, the user. Touching them could cause unexpected behavior that I, or anyone else that contributes to this project are responsible for. You have been warned.
 
 ## Installing Plugins
 
-Installing plugins is just as simple as Installing Allium! All you need to do is add some information into the `repolist.csh` file.
+Installing plugins is just as simple as Installing Allium!
 
-The `repolist.csh` file is simply a list of CraftOS commands that are to be executed one after the other. To install a plugin from github for example, since `gget` is installed by Allium, one could do something like:
+To install a plugin from github for example, use `gget`. `gget` is installed by Allium in the `lib` directory. It allows you to install an entire plugin directly from the command line, like so:
 
     /lib/gget username plugin_repo branch /plugins/plugin_name
 
@@ -55,18 +60,16 @@ Where:
 
 Tip: Plugins will only be loaded if they are within the `/plugins` directory. If the plugin is a single file then it is not necessary to install into a seperate directory, but for consistency it's a good idea. Certain plugins may depend on multiple files to execute, it's in this case where a directory is almost always necessary.
 
-Note: There are _MANY_ more ways to install plugins, some could theoretically come with installers that automatically add the entry properly to the repolist. Hell a plugin could probably be developed to handle this! Just remember that these are not the definitive steps to installing the plugin, and it is up to the developer to mention an alternative method should there be one.
-
-## Installing for Devs
+## Operating as a Dev/Admin
 
 In the event that you've made the decision develop a plugin using Allium or admininstrate a server with Allium, there's some pretty important information you'll want to know about.
 
-- On startup, Allium pulls the latest version committed to the master branch. Generally these will be __stable__, non-breaking changes. However, if you don't trust me (I wouldn't), you can always replace `master` with a specific commit hash. This is especially useful for prospective Allium server operators (I can't see a high demand for them...), preventing me from being able to push an update that will `/summon minecraft:creeper` on repeat within your server is generally a good idea.
+- Allium automatically checks for dependency and Allium updates. If there are any, an informative message (or three) will pop up explaining what's available for updating. Along with that, in like with the 3 exit buttons on the bottom right of your screen, a blue button with an arrow will pop up. At this point it's up to you to make sure that all plugins function in the latest version. Generally, having a backup before you update is a good idea.
 
-- If you're really not liking Allium constantly reinstalling, like myself (many a time did the auto update script overwrite a file), take a look at the [Allium Config](config-layout.md)
+- If you're getting annoyed by allium alerting you that there's an update, check out the [Allium config](config-layout.md). It provides options to disable update notifications from Allium, the depedency managment software, and plugins.
 
 - Have a look at the documentation provided in this wiki.
 
-- It's also generally beneficial to be aware of the things that are getting added to Allium before thay're released. If you're interested in that, try cloning the [unstable branch](https://github.com/hugeblank/Allium/tree/unstable-as), or simply change the `repolist.csh` file to pull from the `unstable-as` branch. Documentation on the unstable branch can be found [here](docs/unstable.md)
+- It's also generally beneficial to be aware of the things that are getting added to Allium before thay're released. If you're interested in that, take a look at the Documentation, found here [here](docs/unstable.md). If anything there intrigues you, take a look at the [unstable branch](https://github.com/hugeblank/Allium/tree/unstable-as), or even redirect your Allium by changing the `updates.repo.branch` config option to `"unstable-as"`.
 
-Warning: If debug mode is enabled it prevents all plugins from updating. Depending on what you're doing this may be undesired behaviour.
+Warning: Unstable *means* unstable. Breaking changes are a thing that happen constantly in that branch and are often a pain in the rear to work out. If you really want to do this you should probably have a knowledge of the inner workings of Allium.

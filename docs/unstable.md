@@ -26,15 +26,5 @@ Allium's depman instance & listing has been moved to its own GH repo! This all s
 
 #### Done
 
-- Cleaned up code, removed duplicate config checks between startup and allium
-- Added allium.loadConfig when provided a table of values parses a generated config file the user has the ability to modify
-- Added .lson extension where needed
-- Fix plugin code cleanup
-- Added 'position' infill method.
-- Added `allium.log/warn` methods, enabling plugin devs to provide informative output.
-
-#### To Do
-
-- Revisit color.lua
 - Update notifications/button in terminal
 - Safe Terminate/Reboot/Shutdown buttons

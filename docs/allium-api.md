@@ -24,6 +24,26 @@ Sanitize plugin names to meet Plugin ID standards
 - **Returns**
   - _string_: valid allium plugin/command ID
 
+### `log`
+
+Logs informative messages to the console using the nifty `[I]` tag
+
+- **Parameters**
+  - _any_: thing to log
+  - _..._
+- **Returns**
+  - none_
+
+### `warn`
+
+Logs warning alert messages to the console using the nifty `[W]` tag
+
+- **Parameters**
+  - _any_: thing to warn
+  - _..._
+- **Returns**
+  - none_
+
 ### `tell`
 
 Output [formatted](color-formatting.md) text

@@ -58,7 +58,8 @@ Now that we have an example let's break down what's going on:
   - `"username"`: Generates a UI listing all of the online users
   - `"plugin"`: Generates a UI listing all of the plugins that got successfully loaded
   - `"command"`: Generates a UI listing all of the commands with their plugin name prefix. This does not prepend an '!' to the command.
-  - `table`: Takes a table of strings and converts it to a list of options for the user.
+  - `"position_[x/y/z]"`: Generates a UI listing potential positions that the user may want to utilize. Each axis should be specified.
+  - `table`: Takes a table of strings and converts it to a UI listing of options for the user.
   - `function`: Runs a function provided to get a table of strings. Converts this table in the same manner that the table option above does
 Infills provide a dynamic capability to your command that is nigh on uncomparable to Minecraft's own vanilla functionality. An example of this can be found in Allium's help command 'plugin' and 'plugin:command' parameters. 'plugin' simply uses an infill to list the plugins loaded, and 'plugin:command' lists all commands.
 - `default` is for when you don't necessarily want an infill for a parameter, but would like it to provide _something_
@@ -83,7 +84,7 @@ Let's click on `!allium:help`:
 
 ![parameters being filled in](https://i.postimg.cc/0jVMPWzk/help-select.png)
 
-After we've selected that it puts it into our suggestion clickable within the UI and we can simply hover over it and then click!
+After we've selected that it puts it into our suggestion bar within the UI and we can simply hover over it and then click!
 
 ![woo!](https://i.postimg.cc/HWz7wxBq/help-suggest.png)
 

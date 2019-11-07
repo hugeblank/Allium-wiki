@@ -60,4 +60,12 @@ Sets data that will remain persistent across a reboot of Allium.
   - _string_: name of the persistent value
 - **Returns**
   - _any_: data that was assigned to that value
-  
+
+### `loadConfig`
+
+Generates an LSON configuration file for a plugin
+
+- **Parameters**
+  - _table_: default values contained in config (must be serializable)
+- **Returns**
+  - _table_: sanitized config files with missing entries filled by the default values
