@@ -1,30 +1,5 @@
 # Unstable
 
-Everything documented here is going to be found in the [unstable-as](https://github.com/hugeblank/Allium/tree/unstable-as) branch. This page is not guaranteed to be up to date with the unstable branch, and there also is absolutely no guarantee that the functions documented here work as intended, or at all. I test them though, there shouldn't be anything mind-bogglingly obvious. Though I am only human...
+Everything documented here is going to be found in the [unstable-as](https://github.com/hugeblank/Allium/tree/unstable-as) branch. Note: This page is not guaranteed to be up to date with the unstable branch, and there also is absolutely no guarantee that the functions documented here work as intended, or at all. I test them though, there shouldn't be anything mind-bogglingly obvious. Though I am only human...
 
-Allium 0.9.0 is in the works! There's a lot to cover...
-
-## Mod Compatability
-
-Introducing Allium Peripherals! I made a mod for 1.14 Fabric that adds a Chat modem, and Creative chat modem that behave identically to Plethora's. It should be as simple as installing CC:Tweaked for Fabric, Fabric API, and Allium Peripherals. Place a command computer down, chat modem on top and you'll be good to go!
-
-### CurseForge Links
-
-- [Allium Peripherals](https://www.curseforge.com/minecraft/mc-mods/allium-peripherals/)
-- [CC: Tweaked for Fabric](https://www.curseforge.com/minecraft/mc-mods/cc-tweaked-fabric)
-- [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api)
-
-## Depman Move
-
-Allium's depman instance & listing has been moved to its own GH repo! This all so that in the event that you want to contribute/fork Allium it's much easier. Check the repo out [here](https://github.com/hugeblank/allium-depman)
-
-## Features in Production
-
-[roger109z](https://github.com/roger109z) and I have been spending a bit of time working on minor tweaks, additions and improvements for this version of allium. Here's the list.
-
-### The List
-
-#### Done
-
-- Update notifications/button in terminal
-- Safe Terminate/Reboot/Shutdown buttons
+0.10.0 is on the way, brace yourself.

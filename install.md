@@ -66,7 +66,7 @@ In the event that you've made the decision develop a plugin using Allium or admi
 
 - Allium automatically checks for dependency and Allium updates. If there are any, an informative message (or three) will pop up explaining what's available for updating. Along with that, in like with the 3 exit buttons on the bottom right of your screen, a blue button with an arrow will pop up. At this point it's up to you to make sure that all plugins function in the latest version. Generally, having a backup before you update is a good idea.
 
-- If you're getting annoyed by allium alerting you that there's an update, check out the [Allium config](config-layout.md). It provides options to disable update notifications from Allium, the depedency managment software, and plugins.
+- If you're getting annoyed by allium alerting you that there's an update, check out the [Allium config](docs/config-layout.md). It provides options to disable update notifications from Allium, the depedency managment software, and plugins.
 
 - Have a look at the documentation provided in this wiki.
 
