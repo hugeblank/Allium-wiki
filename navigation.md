@@ -23,5 +23,7 @@
 
 * [Unstable Changes](docs/unstable.md)
 * [Utilities](docs/utilities.md)
+* [Magic Tables](docs/magic-tables.md)
 * [Command Parameters](docs/command-params.md)
 * [Allium Configs](docs/config-layout.md)
+* [Update Micro-service](docs/update-service.md)

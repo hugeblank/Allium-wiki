@@ -10,9 +10,9 @@ A friendly help menu that gives information about every plugin and command that 
 
 ## !allium:credits
 
-Provides a link to the Allium repository.
+Provides a link to the Allium repository, and attributions to all libraries used to bring Allium together.
 ***
 
 ## !allium:plugins
 
-Provides information on all plugins that are installed, based on the name they registered with.
+Lists all plugins that are installed, based on the name they registered with. Hovering over a plugin name will provide the version of the plugin. Clicking on the plugin name will reveal the plugins credits, if implemented.
